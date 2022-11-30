@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="./destination-moon.css">
+  <title>Frontend Mentor | Space tourism website</title>
+</head>
+<body>
+  <div id="main">
+    <div id="header">
+        <img id="logo" src="./assets/shared/logo.svg">
+        <div id="line"></div>
+        <div id="burger">
+          <div class="brgr" id="burger1"></div>
+          <div class="brgr" id="burger2"></div>
+          <div class="brgr" id="burger3"></div>
+        </div>
+        <div id="menu">
+          <ul id="ulMain">
+            <li id="firstA"><a href="./index.html"><h2 class="num">00</h2><h2 class="word">HOME</h2></a></li>
+            <li id="secondA" class="chosen"><h2 class="num">01</h2><h2 class="word">DESTINATION</h2></li>
+            <li id="thirdA"><a href="./crew-commander.html"><h2 class="num">02</h2><h2 class="word">CREW</h2></a></li>
+            <li id="fourthA"><a href="./technology-vehicle.html"><h2 class="num">03</h2><h2 class="word">TECHNOLOGY</h2></a></li>
+          </ul>
+        </div>
+      </div> 
+
+
+      <div id="board">
+        <section id="left">
+          <div id="title"><h2 class="no destination">01</h2><h2 class="destination">PICK YOUR DESTINATION</h2></div>
+          <img id="region" alt="Moon" src="./assets/destination/image-moon.png">
+        </section>
+        <section id="right">
+          <ul id="ulDestination">
+            <li id="moon2" class="chosen">MOON</li>
+            <li  id="mars">MARS</li>
+            <li  id="europa">EUROPA</li>
+            <li  id="titan">TITAN</li>
+          </ul>
+          <h3 id="name">Moon</h3>
+          <p id="description">See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.</p>
+          <div id="information">
+              <div id="distance">
+                  <h6 class="words"> AVG. DISTANCE</h6>
+                  <h6 id="distanceNum" class="numbers">384,400 km</h6>
+              </div>
+              <div id="time">
+                <h6 class="words">EST. TRAVEL TIME</h6>
+                <h6 id="timeNum" class="numbers">3 DAYS</h6>
+              </div>
+          </div>
+        </section>
+      </div>
+  </div>
+
+  <script src="./index.js"></script>
+</body>
+</html>

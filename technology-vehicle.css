@@ -1,0 +1,423 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Roboto+Condensed:wght@300&display=swap');
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+}  
+#main{
+    margin: 0;
+    padding:0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./assets/technology/background-technology-desktop.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;   
+}
+a{
+    display: flex;
+    flex-direction: row ;
+    color: rgba(255, 255, 255, 0.705);
+    text-decoration:none;
+    background-color: transparent;
+}
+#header{
+    padding-top: 5vw;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 100vw; 
+    height:3vh; 
+}
+ul{
+    padding-left: 6vw;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(255, 255, 255, 0.041);   
+    backdrop-filter: blur(10px);
+    flex-wrap: wrap;
+    height:10vh;
+}
+li.chosen{
+    border-bottom: 2px solid white;
+}
+li{
+    justify-content:center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    margin-right:4vw;
+    height:10vh;
+}
+#logo{
+    margin-left: 4vw;
+    margin-right: 1vw;
+    width:13vh;
+}
+h2.num{
+    color: white;
+    margin-right: 1vw;
+    font-size: 1em;
+    font-weight: 300;
+}
+h2.word{
+    color: rgba(255, 255, 255, 0.616);
+    font-size: 1em;
+    letter-spacing: .1vw;
+    font-weight: 300;
+}
+#line{
+    width: 50%;
+    background-color: rgb(88, 88, 88);
+    height: .1vh;
+    margin-left: 3vw;
+    margin-right: -3vw;
+    z-index: 1;
+}
+#menu{
+    width:100%;
+}
+
+.board{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    margin-left: 12vw;
+    margin-right: 0vw;
+    margin-top: 15vh;
+    flex-wrap: wrap;
+    height: 100vh;
+    width: 80vw;
+}
+h3, h1, p{
+    color: white;
+}
+p{    
+    margin-top:-2vw;
+    font-size: calc(.1vh + 1.2vw);
+    min-width: 6vh;
+}
+#description{  
+    width: 29vw;
+    min-width: 5vh;  
+}
+
+p#role{
+    font-size: calc(.1vh + 1.2vw);
+    font-family: 'Cinzel', serif;
+    color: rgba(212, 212, 212, 0.664);
+    font-weight: 300;
+    margin-top: 0vh;
+}
+h3{
+    margin-top:-1vw;
+    letter-spacing:.1vw;
+    word-spacing: .3vw;
+    
+    font-size: calc(2vh + 2vw);
+    font-family: 'Cinzel', serif;
+    font-weight: 300; 
+}
+
+h2.no.destination{
+    color: rgba(71, 71, 71, 0.801);
+    font-weight: 700;
+    margin-right:1vw;
+}
+h2.destination{
+    color: rgb(255, 255, 255);
+    font-weight:300;
+    letter-spacing: .2vw;
+    font-size: calc(1vh + 1.5vw);
+    margin-bottom: 9vw;
+    margin-top: -2vw;
+}
+
+#title{
+    display: flex;
+    flex-direction:row;  
+}
+#personImg{
+    width: 34vw;
+    height:34vw;
+    
+    margin-top: -20vh;
+}
+#left{
+    width:46vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.circle{
+    width:7.5vh;
+    height:7.5vh;
+    background-color: transparent;
+    border-radius: 100%;
+    margin-right: .5vw;
+    border:1px solid gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-bottom: 2vh;
+    font-size:3.5vh;
+    
+}
+.circle.chosen{
+    background-color: white;
+    border: 2px solid white;
+    color: black;
+}
+#options{
+    margin-right: 3vw;
+    display: flex;
+    flex-direction: column;  
+    height: 35vh;
+    justify-content:space-between
+}
+#text{
+    height: 50vh;
+    margin-RIGHT: 18.2vw;
+}
+#down{
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:900px) {
+    #line{
+        display:none
+    }
+    #header{
+        justify-content: space-between;
+        margin-left: -1vw;
+        margin-bottom: 1.8vh;
+        margin-top: 2vh;
+    }
+    ul{
+        height:11vh;
+        padding-left: 0;
+        padding-right: 0;
+        justify-content:space-around;
+    }
+     li{
+        height: 11vh;
+        margin-right: 0;
+    }
+    h2.num{
+        display:none;
+    }
+    #title{  
+        margin-left: -13vw;
+        margin-bottom:6vh;
+        order: -1;
+        align-self: flex-start;
+        
+        margin-top: -30vh;
+    }
+    #menu{
+        width: 58vw;
+        margin-top: -5vw;
+        margin-right:-1vw;
+    }
+    #logo{
+        margin-top:-4vw;
+        width:11vw;
+    }
+    .board{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top:0;  
+        padding:0;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        height:140vh; 
+        width: 100vw;
+    }
+    #left{
+        margin-right: 0vw; 
+        text-align: center;
+        width: 45vh; 
+    }
+    #description{
+        width: 40vh;
+        justify-content:space-between;
+       
+    }
+   
+    #main{
+        background-image: url(./assets/technology/background-technology-tablet.jpg); 
+        height:130vh;
+        overflow: hidden;
+    }
+
+    p{    
+        font-size: calc(1.5vh + 1.5vw);
+        text-align: center;
+        margin-bottom: 7vh;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    p#role{
+        font-size: calc(1.5vh + 1.2vw);
+        font-family: 'Cinzel', serif;
+        color: rgba(212, 212, 212, 0.664);
+        font-weight: 300;
+        margin-top: 4vh;
+    }
+    h4{
+        font-size: calc(3vh + 2vw);
+    }
+    h3{
+        margin-top: -4.5vh;
+        font-size: calc(3.5vh + 2vw);
+    }
+    #personImg{
+        height:auto;
+        width:auto;
+        align-self: center;
+        order: -1; 
+        margin-left: auto;
+        margin-right:auto;
+        margin-bottom:5vh;
+        transform: scale(1.09); 
+    }
+    #options{ 
+       justify-content:center;
+       margin-top: 3vh;  
+       flex-direction: row;
+       align-items:center;
+    }
+
+    #down{
+        margin-top: 20vw;
+        height:40vh;
+        align-self: center;
+        flex-direction: column;
+    }
+    #description{
+       margin-top: -1vh;
+    }
+    .circle{
+        margin-bottom: 0vh; 
+       margin-right: 2vw;
+       margin-left:2vw;  
+    }
+    #text{
+        justify-content:center;
+        margin-top: 0vh;  
+        flex-direction: row; 
+        width: 100%;
+    }  
+}
+
+
+@media screen and (max-width:450px){
+    #burger{
+        display:flex;
+        flex-direction: column;
+        justify-content:space-around;
+        margin-right: 2vw;
+        z-index: 1;
+    }
+   
+    #menu.yes{
+        transform:translate(0,0);
+        transition: all .5s ease-in-out;
+    }
+    #burger2.yes{
+        opacity:0;
+        transition: all .5s ease;
+    }
+    #burger1.yes{
+        transform:rotate(-45deg)translateY(20px) translateX(2px);
+        transition: all .5s ease
+    }
+    #burger3.yes{
+        transform:rotate(45deg)translateY(-25px) translateX(-2px);
+        transition: all .5s ease
+    }
+    .brgr{
+        background-color: white;
+        width:60px;
+        height:2px;
+        margin: 7px;
+        margin-right: 3vw;
+        transition: all .5s ease
+    }
+    #menu{
+        width: 95vw;
+        margin-top: 3vw;
+        margin-left:auto;
+        margin-right: auto;
+        transform:translate(-400px,0);
+        transition: all .3s ease-in-out;
+    }  
+    #header{
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-left: 0vw;
+        margin-bottom: -15vh;
+        width: 100vw;
+    }
+    #title{
+        padding:0;
+        width: 59vw;
+        display: flex;
+        flex-direction:row;
+        margin-bottom: 35vw;
+        margin-top: 15vh;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    h2.no.destination{
+        font-size: 3vh;
+        margin: 0vw;
+    }
+    h2.destination{
+         font-size: 3vh;
+         margin: 0vh;
+    }
+    #logo{
+        width: 20vw;
+    }
+    #left{
+        display: flex;
+        flex-direction: column;
+    }
+    #options{
+        margin-bottom: 5vh;
+        justify-content:space-around;
+        width: 60vw;
+        align-self: center;
+    }
+    #personImg{
+        width:100vw;
+        margin-bottom: 2vh;
+    }
+    p{    
+        font-size: 1rem;
+    }
+    h4{
+        font-size: 1.4rem;
+    }
+    h3{
+        font-size: 1.5rem
+    }
+}
+
