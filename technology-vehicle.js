@@ -12,7 +12,7 @@ let technology;
 
 
 let http = new XMLHttpRequest();
-	http.open('get', 'https://frostlordvi.github.io/jsonapi11/data.json', true);
+	http.open('get', 'data.json', true);
 	http.send();
 	http.onload = function(){
 
