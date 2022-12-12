@@ -167,6 +167,9 @@ margin-top: -30vw;
 .circle.chosen{
     background-color: white;
 }
+.circle:hover{
+    cursor:pointer;
+}
 #options{ 
     display: flex;
     flex-direction: row;
